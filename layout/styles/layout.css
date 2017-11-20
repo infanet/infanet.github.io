@@ -1,0 +1,354 @@
+@charset "utf-8";
+/*Template Name: TIENS*/
+@import url("fontawesome-4.2.0.min.css");
+@import url("framework.css");
+/* Rows
+--------------------------------------------------------------------------------------------------------------- */
+.row1{
+	border-top:2px solid;
+}
+/* Top Bar
+--------------------------------------------------------------------------------------------------------------- */
+#topbar{
+	padding:5px 0 8px; 
+	font-size:12px;
+}
+#topbar .nospace.linklist li{
+	display:inline; margin-right:5px; 
+	padding-right:8px; border-right:1px solid;
+}
+#topbar .nospace.linklist li:last-child{
+	margin:0; padding:0; 
+	border:none;
+}
+/* Header
+--------------------------------------------------------------------------------------------------------------- */
+#header #logo h1{
+	margin:0; padding:0; 
+	text-transform:none; 
+	font-size:36px; 
+	font-variant:small-caps;
+}
+#header #logo{
+	margin:8px 0 0 0;
+}
+/* Intro
+--------------------------------------------------------------------------------------------------------------- */
+#intro{
+	padding:120px 0;
+}
+/* Content Area
+--------------------------------------------------------------------------------------------------------------- */
+.container{
+	padding: 110px 0 110px;
+}
+/* Copyright
+--------------------------------------------------------------------------------------------------------------- */
+#copyright{
+	padding:30px 0;
+}
+#copyright p{
+	margin:0; 
+	padding:0;
+}
+/* Transition Fade
+--------------------------------------------------------------------------------------------------------------- */
+.faico a, #mainav ul, #mainav a, .btn, #intro article{
+	transition:all .4s ease-in-out;
+}
+/* Navigation
+--------------------------------------------------------------------------------------------------------------- */
+nav ul, nav ol{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{
+	position:absolute; 
+	font-family:"FontAwesome"; 
+	font-size:10px; 
+	line-height:10px;
+}
+/* Top Navigation */
+#mainav ul{
+	text-transform:uppercase;
+}
+#mainav ul ul{
+	z-index:9999; 
+	position:absolute; 
+	width:160px; 
+	text-transform:none;
+}
+#mainav ul ul ul{
+	left:160px; 
+	top:0;
+}
+#mainav li{
+	display:inline-block; 
+	float:left; 
+	position:relative; 
+	margin:0; 
+	padding:0;
+}
+#mainav li:last-child{
+	margin-right:0;
+}
+#mainav li li{
+	width:100%; 
+	margin:0;
+}
+#mainav li a{
+	display:block; 
+	padding:20px;
+}
+#mainav li li a{
+	border:solid; 
+	border-width:0 0 1px 0;
+}
+#mainav li li a, #mainav li li .drop{
+	display:block; 
+	margin:0; 
+	padding:10px 15px;
+}
+#mainav .drop::after{
+	top:25px; 
+	left:8px;
+}
+#mainav li li .drop::after{
+	top:15px; 
+	left:5px;
+}
+#mainav ul ul{
+	visibility:hidden; 
+	opacity:0;
+}
+#mainav ul li:hover > ul{
+	visibility:visible; 
+	opacity:1;
+}
+#mainav form{
+	display:none; 
+	margin:0; 
+	padding:0;
+}
+#mainav form select, #mainav form select option{
+	display:block; 
+	cursor:pointer; 
+	outline:none;
+}
+#mainav form select{
+	width:100%; 
+	padding:5px; 
+	border:1px solid;
+}
+#mainav form select option{
+	margin:5px; 
+	padding:0; 
+	border:none;
+}
+/* Colours
+--------------------------------------------------------------------------------------------------------------- */
+body{
+	color:#15171; 
+	background-color:#111111;
+}
+.overlay{
+	background-color:rgba(0,0,0,.6);
+}
+
+/* Rows */
+.row{
+	background-color:#E9E3CE;
+}
+.row0, .row0 a{
+	color:#888888; 
+	background-color:#232323;
+}
+.row1{
+	color:#292929; 
+	background-color:#FFFFFF; 
+	border-color:#8ABA56;
+}
+.row3{
+	color:#292929; 
+	background-color:#FFFFFF;
+}
+.row2{
+	color:#FFFFFF; 
+	background-color:#232323;
+}
+.row6, .row6 a{
+	color:#888888; 
+	background-color:#111111;
+}
+/* Header */
+#header #logo h1 a{
+	color:inherit;
+}
+/* Navigation */
+#mainav li a{
+	color:inherit;
+}
+#mainav .active a, #mainav a:hover, #mainav li:hover > a{
+	color:#FFFFFF; 
+	background-color:#8ABA56;
+}
+#mainav li li a, #mainav .active li a{
+	color:#FFFFFF; 
+	background-color:rgba(0,0,0,.6); 
+	border-color:rgba(0,0,0,.6);
+}
+#mainav li li:hover > a, #mainav .active .active > a{
+	color:#FFFFFF; 
+	background-color:#8ABA56;
+}
+#mainav form select{
+	border-color:#D7D7D7;
+}
+#zv{
+	background-color: #f8f4ff;
+	opacity: .9;
+}
+#tn{
+	text-align: justify;
+}
+/* Media Queries
+--------------------------------------------------------------------------------------------------------------- */
+@-ms-viewport{
+	width:device-width;
+}
+/* Smartphone + Tablet
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width:180px) and (max-width:500px) {
+	#featuredpost figcaption .shortintro{
+		display:none;
+	}
+	#intro{
+		padding:80px 0 50px;
+	}
+	#breadcrumb{
+		padding:20px 0;
+	}
+	#latestposts li figure{
+		float:none; 
+		margin:0 0 20px 0;
+	}
+	.container{padding:50px 0;}
+	#cta{padding:50px 0 20px;}
+}
+
+@media screen and (min-width:180px) and (max-width:750px) {
+	.imgl, .imgr{
+		display:inline-block;
+		float:none;
+		margin:0 0 10px 0;
+	}
+	.fl_left, .fl_right{
+		display:block;
+		float:none;
+	}
+	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{
+		display:block; 
+		float:none; 
+		width:auto; 
+		margin:0 0 30px 0; 
+		padding:0;
+	}
+}
+
+@media screen and (min-width:180px) and (max-width:900px) {
+	#topbar, #header, #intro, #breadcrumb, .container, #cta, #footer, #copyright{
+		max-width:95%;
+	}
+	#topbar{
+		text-align:center;
+	}
+	#topbar ul{
+		margin-bottom:10px;
+	}
+	#topbar > div:nth-of-type(2) ul{
+		margin:0;
+	}
+	#header{
+		padding:15px 0;
+		text-align:center;
+	}
+	#header #logo{
+		margin:0 0 20px 0;
+	}
+	#mainav{
+		margin-top:5px;
+	}
+	#mainav ul{
+		display:none;
+	}
+	#mainav form{
+		display:block;
+	}
+	#comments input[
+	type="reset"]{
+		margin-top:10px;
+	}
+	.pagination li{
+		display:inline-block; 
+		margin:0 5px 5px 0;
+	}
+	#cta article{
+		display:block; 
+		padding:30px 20px; 
+		text-align:center;
+	}
+	#cta article *{
+		margin:0;
+	}
+	#cta article img{
+		margin-bottom:20px;
+	}
+	#cta article .heading{
+		padding:0;
+	}
+	#copyright p:first-of-type{
+		margin-bottom:10px;
+	}
+}
+/* Must be after 180 => 900 - do not include in previous statements with the same parameters */
+@media screen and (min-width:180px) and (max-width:750px) {
+	#latestposts li figure, #latestposts li article{
+		margin:0;
+	}
+	#latestposts li figure{
+		float:left; 
+		margin-right:20px;
+	}
+}
+/* Must be after 180 => 900 - do not include in previous statements with the same parameters */
+@media screen and (min-width:180px) and (max-width:500px) {
+	#latestposts li figure{
+		float:none; 
+		margin:0 0 20px 0;
+	}
+}
+/* Max Wrapper Width - Laptop, Desktop etc.
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width:978px) {
+	#topbar, #header, #intro, #breadcrumb, .container, #cta, #footer, #copyright{
+		max-width:978px;
+	}
+}
+/* Other
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:650px) {
+	.scrollable{
+		display:block; 
+		width:100%; 
+		margin:0 0 30px 0; 
+		padding:0 0 15px 0; 
+		overflow:auto;
+		overflow-x:scroll;
+	}
+	.scrollable table{
+		margin:0; 
+		padding:0; 
+		white-space:nowrap;
+	}
+}

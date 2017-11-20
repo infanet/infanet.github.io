@@ -1,0 +1,121 @@
+@charset "utf-8";
+/*Template Name: TIENS*/
+html{
+	overflow-y:scroll;
+}
+html, body{
+	margin:0; 
+	padding: 10px 0px 0px; 
+	font-size:14px; 
+	line-height:1.4em;
+}
+.nospace{
+	margin:0; 
+	padding:0; 
+	list-style:none;
+}
+.bgded{
+	background:top center no-repeat; 
+	background-size:cover;
+}
+.btn{
+	display:inline-block; 
+	padding:6px 12px; 
+	border:1px solid; 
+	font-size:.85rem; 
+	line-height:normal; 
+	text-transform:uppercase;
+}
+.clear::before, .clear::after, .group::before, .group::after{
+	display:table; 
+	content:"";
+}
+.clear, .clear::after, .group, .group::after{
+	clear:both;
+}
+a{
+	outline:none; 
+	text-decoration:none;
+}
+.fl_left, .imgl{
+	float:left;
+}
+.fl_right, .imgr{
+	float:right;
+}
+.imgl{
+	margin:0 15px 10px 0; 
+	clear:left;
+}
+.imgr{
+	margin:0 0 10px 15px; 
+	clear:right;
+}
+/* Fonts
+--------------------------------------------------------------------------------------------------------------- */
+body, input, textarea, select{
+	font-family:Verdana, Geneva, sans-serif;
+}
+h1, h2, h3, h4, h5, h6, .heading{
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+/* Generalise
+--------------------------------------------------------------------------------------------------------------- */
+h1, h3, h4, h5, h6, .heading{
+	margin:0 0 20px 0; 
+	font-size:22px; 
+	line-height:normal; 
+	text-transform:uppercase; 
+	font-weight:bold;
+}
+h1, h2{
+	text-align: center;
+}
+.wrapper{
+	display:block;
+	width:100%;
+	margin:0; 
+	padding:0; 
+	text-align:left; 
+	word-wrap:break-word;
+	}
+#topbar, #header, #intro, #breadcrumb, .container, #cta, #footer, #copyright{
+	display:block; 
+	margin:0 auto;
+}
+/* HTML 5 Overrides
+--------------------------------------------------------------------------------------------------------------- */
+address, article, aside, figcaption, figure, footer, header, main, nav, section{
+	display:block; 
+	margin:0; 
+	padding:0;
+}
+#menu {
+	Position: fixed;
+	Top: 0px;
+	Left: 0px;
+	width: 100%;
+	z-index: 1;
+}
+.rasp{
+    float: left;
+    margin-right: 20px;
+    border-radius: 30px;
+}
+.rasp0{
+	border-radius: 30px;
+	width: 60%;
+}
+.blok{
+background-color: #8FBC8F;
+padding: 25px 30px;
+border-radius: 30px;
+margin-bottom: 15px;
+}
+.raz{
+width: 160px;;
+height: 160px;
+}
+.fig{
+text-align: center;
+}
